@@ -13,7 +13,7 @@ registerBlockType( 'adventures-in-gutenberg/inspector-controls', {
 
 	edit: function ( props ) {
 		return [
-			el(
+			!! props.focus && el(
 				inspectorControls,
 				{
 					key: 'inspector'
